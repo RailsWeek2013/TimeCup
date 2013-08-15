@@ -1,0 +1,17 @@
+Autoren:
+	- Nikolai Olenberg (923239)
+	- Murat Saygili    (924636)
+
+Projektname: TimeCup
+
+																Beschreibung				     Gems
+Core-Features:
+	- Benutzerverwaltung 									(Benutzer erstellen)      |  (Devise, AUTHLogic)
+	- Events erstellen 										(Titel, Datum, Bild)      |  (PaperClip, CarrierWave)
+	- Coutdown Berechnung für den Eventtermin 				(JJ:MM:WW:TT:HH:SS)		  | 
+	- Kategorien 											(Privat, Freizeit, etc.)  | 
+	- Benutzer einladen 									(Reflink)				  | 
+
+Optional-Features:
+	- Benachrichtigen vor Ende des Coutdowns per E-Mail 	(Zeit waehlbar)  		  |
+	- Gruppen bilden 										(Freunde, Arbeitskolegen) |
