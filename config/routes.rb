@@ -1,6 +1,9 @@
 TimeCup::Application.routes.draw do
 
-  devise_for :users
+  root :to =>'home#index'
+  devise_for :users,:controllers => { :registrations =>'registration'}
+  get 'dashboard' => 'home#dashboard'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
