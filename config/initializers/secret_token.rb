@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-TimeCup::Application.config.secret_key_base = 'ee395c9b3de4f17c4c9718eb1a0e999c0317c1e35851b62368be503b3b6bf5b2aa502e70ce61510825696c502e911b953f17663246feb6c96f42138e27f5b9c8'
+TimeCup::Application.config.secret_key_base = '4dbbf32bf603b3156cd5c931389a1e1f98a126f90b0656f81e8d46390315a7a836a4449495a5bd9576401f57645d67d108c4dcdee69d650d5b78b5af3d2294f8'
