@@ -1,12 +1,3 @@
-<%if user_signed_in? %>
-
-<h3>Sie haben sich erfolgreich eingeloggt :)</h3>
-<%= link_to "Ausloggen", destroy_user_session_path, :method => :delete %>
-
-<% else %>
-
-<h1> Willkommen zu deinen persönlichen Zeit-Becher</h1>
-<%= link_to "Einloggen", new_user_session_path, :method => :get %>
-<%= link_to "Registrieren", new_user_registration_path, :method => :get %>
-
+<% if user_signed_in? %>
+<%= link_to "Mein becher", 'events#index' %>
 <% end %>

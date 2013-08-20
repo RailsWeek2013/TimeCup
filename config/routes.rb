@@ -1,5 +1,7 @@
 TimeCup::Application.routes.draw do
 
+  resources :events
+
   root :to =>'home#index'
   devise_for :users,:controllers => { :registrations =>'registration'}
   get 'dashboard' => 'home#dashboard'
