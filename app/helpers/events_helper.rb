@@ -1,30 +1,23 @@
-require 'active_support/all'
-
 module EventsHelper
 
+	# @jahr = 31536000
+	# @monat = 2592000
+	# @tag = 86400
+	# @std = 3600
+	# @min = 60
 
-@s = "06/07/2008"
 
+	def yearcount time
+		
+		if time > Time.now
+			t = (time - Time.now).to_i
+			"Noch: #{ChronicDuration.output(t)}"
+		else
+			t = (Time.now - time).to_i
+			"Seit: #{ChronicDuration.output(t)}"
+		end
+	end
 
-def daycount time
-t = time - Time.now
-return (t/(60*60*24)).to_i % 366, "Tage"
-end
-
-def monthcount
-t = time - Time.now
-return (t / 2592000).to_i % 30
-end
-
-def yearcount time
-t = time - Time.now
-return (t / 31536000).to_i
-end
-
-def test time
-	t = time - DateTime.now
-	return t.to_datetime
-end
 
 
 
