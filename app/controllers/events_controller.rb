@@ -21,11 +21,6 @@ class EventsController < ApplicationController
   def edit
   end
 
-  def invite
-  end
-
-
-
   # POST /events
   # POST /events.json
   def create
@@ -74,6 +69,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :happend_at)
+      params.require(:event).permit(:title, :happend_at, :category)
     end
   end

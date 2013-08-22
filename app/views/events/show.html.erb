@@ -9,6 +9,14 @@
   <strong>Happend at:</strong>
   <%= @event.happend_at %>
 </p>
+<p>
+  <strong>Countdown:</strong>
+  <%= yearcount @event.happend_at %>
+</p>
+<p>
+  <strong>Category:</strong>
+  <%= @event.category %>
+</p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
