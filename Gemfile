@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
 
+# Benutzerverwaltung
 gem 'devise'
 
+# Countdown
 gem 'chronic_duration'
 
+# Konsole
 gem 'better_errors'
 
+# Florians Werk
 gem 'binding_of_caller'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
